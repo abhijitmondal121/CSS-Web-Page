@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .navigation {
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+            color:red;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+            color:red;
+
+        }
+
+        section {
+            height: 344px;
+            font-family: 'Bree Serif', serif;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            color:red;
+        }
+        a:hover{
+            color:white;
+            border:2px dashes white;
+            box-shadow:3px 3px #aaaaaa;
+            /* background-image: linear-gradient(to top,.#ff00aa,.#33ffff.30%) */
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        p {
+            text-align: center;
+            font-size:30px;
+        }
+
+        /* section::after{
+        content:"this is a content"
+    } */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="#" target="black" style="text-decoration: none;">Home</a></li>
+                <li class="item"><a href="#" target="blank" style="text-decoration: none;"> About </a> </li>
+                <li class="item"><a href="#" target="blank" style="text-decoration: none;">Services</a></li>
+                <li class="item"><a href="#" target="blank" style="text-decoration: none;">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1><span style="color:#3366ff;"> W</span><span style="color:#993300;">e</span><span style="color:#ff3300;"> l</span><span style="color:#66a3ff;"> c</span><span style="color:#00ff00;"> o</span><span style="color:#cc3300;"> m</span><span style="color:#00e6b4;"> e </span> &nbsp;<span style="color:#00ccff;"> t</span><span style="color:#e6e600;"> o</span> &nbsp; <span style="color: #ff4dd2;"> C</span></span><span style="color:#cc3300;">o</span></span><span style="color:#4dff4d;">d</span></span><span style="color:  #ff1a1a;"> i</span></span><span style="color: #ffbf00;"> n</span></span><span style="color:#b700ff;"> g</span> <span style="color:#a7eb2b;">W</span><span style="color:#ff1fec;">o</span><span style="color:#e47916;">r</span><span style="color:#35f1e8;">l</span><span style="color:#00ff00;">d</span></h1>
+            <p>Join us today and build your carear.</p>
+        </section>
+       
+</body>
+
+</html>
